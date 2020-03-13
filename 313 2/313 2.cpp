@@ -10,7 +10,7 @@ using std::string;
 
 int main()
 {
-	cv::Mat srcMat = imread("D:\\1.jpg");
+	cv::Mat srcMat = imread("D:\\1.jpg",0);
 	cv::Mat result1, result2;
 	threshold(srcMat, result1, 100, 255, THRESH_BINARY);
 	namedWindow("全局二值化");
